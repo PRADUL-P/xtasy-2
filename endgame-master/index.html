@@ -13,6 +13,12 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
+
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="css/font-awesome.min.css"/>
@@ -415,11 +421,13 @@
 	
 
 	<!-- Intro section -->
-	<section class="intro-video-section set-bg d-flex align-items-end " data-setbg="./img/promo-bg.jpg">
-		<a href="https://youtu.be/zNm09qkTNP4" class="video-play-btn video-popup"><img src="img/icons/solid-right-arrow.png" alt="#"></a>
+	
+	<section class=" intro-video-section set-bg d-flex align-items-end " data-setbg="./img/promo-bg.jpg">
+		<a class="popup-youtube video-play-btn" href="https://www.youtube.com/watch?v=zNm09qkTNP4-apI"><img src="img/icons/solid-right-arrow.png" alt="#"></a><br>
+		<!-- <a href="https://www.youtube.com/watch?v=zNm09qkTNP4" class="video-play-btn video-popup"><img src="img/icons/solid-right-arrow.png" alt="#"></a> -->
 		<div class="container">
 			<div class="video-text">
-				<h2>Promo video of the game</h2>
+				<h2>xtasy 2022</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
 			</div>
 		</div>
@@ -487,7 +495,18 @@
 	</footer>
 	<!-- Footer section end -->
 
-
+	<script>
+		$(function() {
+			$('.popup-youtube, .popup-vimeo').magnificPopup({
+				disableOn: 700,
+				type: 'iframe',
+				mainClass: 'mfp-fade',
+				removalDelay: 160,
+				preloader: false,
+				fixedContentPos: false
+			});
+		});
+		</script>
 	<!--====== Javascripts & Jquery ======-->
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
